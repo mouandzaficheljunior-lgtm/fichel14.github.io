@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut Fichel - Formations</title>
+    <style>
+        /* CSS simple pour la démo - Réutilisez les styles de l'accueil et ajoutez ceux-ci */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004a99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .formation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .formation-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .formation-card:hover {
+            transform: translateY(-5px);
+        }
+        .formation-card h3 {
+            color: #004a99;
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .formation-card ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        .btn-details {
+            display: inline-block;
+            background-color: #004a99;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-details:hover {
+            background-color: #003366;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Institut Fichel</h1>
+        <p>L'excellence au service de l'avenir</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formation.html">Formations</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h2>Découvrez nos Programmes d'Études</h2>
+        <p>L'Institut Fichel propose une offre académique complète, conçue pour répondre aux défis du marché de l'emploi mondial et pour encourager l'innovation.</p>
+
+        <section class="formation-grid">
+            
+            <div class="formation-card">
+                <h3>Licences (BAC +3)</h3>
+                <p>Nos programmes de licence offrent une base solide en sciences, technologie ou gestion, permettant une insertion professionnelle rapide ou la poursuite en Master.</p>
+                <ul>
+                    <li>Licence en Sciences des Données</li>
+                    <li>Licence en Gestion et Marketing Numérique</li>
+                    <li>Licence en Énergies Durables</li>
+                </ul>
+                <a href="licences.html" class="btn-details">Voir les détails</a>
+            </div>
+
+            <div class="formation-card">
+                <h3>Masters Spécialisés (BAC +5)</h3>
+                <p>Axés sur la recherche et la spécialisation professionnelle, nos Masters préparent aux postes d'experts et de managers de haut niveau.</p>
+                <ul>
+                    <li>Master en Cybersécurité Avancée</li>
+                    <li>Master en Finance Quantitative</li>
+                    <li>Master en Ingénierie des Systèmes Complexes</li>
+                </ul>
+                <a href="masters.html" class="btn-details">Voir les détails</a>
+            </div>
+            
+            <div class="formation-card">
+                <h3>Formations Exécutives & Continues</h3>
+                <p>Des programmes courts et certifiants, conçus pour les professionnels souhaitant mettre à jour leurs compétences ou opérer une reconversion stratégique.</p>
+                <ul>
+                    <li>Certificat en Leadership et Innovation</li>
+                    <li>Bootcamp Développement Web Full Stack</li>
+                    <li>Programme de Management Éthique</li>
+                </ul>
+                <a href="executif.html" class="btn-details">Voir les détails</a>
+            </div>
+
+        </section>
+        
+        <hr>
+
+        <section style="text-align: center; padding: 20px;">
+            <h3>Intéressé(e) ?</h3>
+            <p>Consultez notre guide d'admission pour connaître les dates limites et les conditions requises pour chaque programme.</p>
+            <p><a href="admission.html" class="btn-details" style="background-color: #ffcc00; color: #004a99;">Processus d'Admission</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Institut Fichel. Tous droits réservés.</p>
+        <p><a href="politique.html" style="color: white;">Politique de Confidentialité</a> | <a href="mentions.html" style="color: white;">Mentions Légales</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut Fichel - Formations par Branches</title>
+    <style>
+        /* CSS simple pour la démo - Styles de base réutilisés et adaptés */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004a99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .main-title {
+            color: #004a99;
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        /* Style pour l'accordéon des branches */
+        .branch-item {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        .branch-header {
+            background-color: #004a99;
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            border-radius: 8px 8px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .branch-header:hover {
+            background-color: #003366;
+        }
+        .branch-content {
+            padding: 20px;
+            display: none; /* Rendre le contenu invisible par défaut */
+            border-top: 1px solid #ddd;
+            border-radius: 0 0 8px 8px;
+        }
+        .branch-content h4 {
+            color: #ffcc00;
+            margin-top: 10px;
+        }
+        .program-list {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        .cta-details {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #004a99;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .cta-details:hover {
+            background-color: #ffc233;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        /* Le code JavaScript suivant est nécessaire pour le fonctionnement de l'accordéon */
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Institut Fichel</h1>
+        <p>L'excellence au service de l'avenir</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="main-title">Explorer les Formations Clés </h2>
+        <p style="text-align: center; margin-bottom: 40px;">Sélectionnez une branche ci-dessous pour découvrir les programmes de Licence et Master associés, les objectifs et les parcours possibles.</p>
+
+        <section class="branches-accordion">
+            
+            <div class="branch-item">
+                <div class="branch-header" onclick="toggleContent('tech')">
+                    <span>⚙️ Technologie, Ingénierie & Sciences des Données</span>
+                    <span>[+]</span>
+                </div>
+                <div class="branch-content" id="tech">
+                    <p>Ce pôle forme les ingénieurs et architectes des systèmes numériques et industriels de demain. L'accent est mis sur la programmation, la sécurité et l'intelligence artificielle.</p>
+                    
+                    <h4>Programmes de Licence Associés</h4>
+                    <ul class="program-list">
+                        <li>Licence en **Sciences des Données**</li>
+                        <li>Licence en **Génie Logiciel et Développement Web**</li>
+                    </ul>
+                    <a href="licences.html" class="cta-details">Détails des Licences Tech</a>
+                    
+                    <h4>Programmes de Master Spécialisés</h4>
+                    <ul class="program-list">
+                        <li>Master en **Cybersécurité Avancée** (M1/M2)</li>
+                        <li>Master en **Intelligence Artificielle et Machine Learning** (M1/M2)</li>
+                    </ul>
+                    <a href="masters.html" class="cta-details">Détails des Masters Tech</a>
+                </div>
+            </div>
+
+            <div class="branch-item">
+                <div class="branch-header" onclick="toggleContent('mgmt')">
+                    <span>📈 Management, Finance & Gestion des Organisations</span>
+                    <span>[+]</span>
+                </div>
+                <div class="branch-content" id="mgmt">
+                    <p>Ce pôle prépare aux fonctions de direction, d'analyse financière et de conseil. Les diplômés sont aptes à piloter la stratégie et la croissance des entreprises dans un environnement complexe.</p>
+                    
+                    <h4>Programmes de Licence Associés</h4>
+                    <ul class="program-list">
+                        <li>Licence en **Gestion et Marketing Numérique**</li>
+                        <li>Licence en **Comptabilité et Audit**</li>
+                    </ul>
+                    <a href="licences.html" class="cta-details">Détails des Licences Gestion</a>
+
+                    <h4>Programmes de Master Spécialisés</h4>
+                    <ul class="program-list">
+                        <li>Master en **Finance Quantitative et Algorithmique** (M1/M2)</li>
+                        <li>Master en **Management de l'Innovation** (M1/M2)</li>
+                    </ul>
+                    <a href="masters.html" class="cta-details">Détails des Masters Gestion</a>
+                </div>
+            </div>
+            
+            <div class="branch-item">
+                <div class="branch-header" onclick="toggleContent('enviro')">
+                    <span>🌱 Environnement, Développement Durable & Énergie</span>
+                    <span>[+]</span>
+                </div>
+                <div class="branch-content" id="enviro">
+                    <p>Ce pôle s'adresse à ceux qui veulent relever les défis écologiques et énergétiques de notre siècle. Il allie sciences de l'ingénieur, économie et politiques publiques.</p>
+                    
+                    <h4>Programmes de Licence Associés</h4>
+                    <ul class="program-list">
+                        <li>Licence en **Énergies Durables et Transition Écologique**</li>
+                    </ul>
+                    <a href="licences.html" class="cta-details">Détails des Licences Environnement</a>
+                    
+                    <h4>Programmes de Master Spécialisés</h4>
+                    <ul class="program-list">
+                        <li>Master en **Ingénierie de l'Environnement et des Ressources** (M1/M2)</li>
+                        <li>Master en **Économie Circulaire et RSE** (M1/M2)</li>
+                    </ul>
+                    <a href="masters.html" class="cta-details">Détails des Masters Environnement</a>
+                </div>
+            </div>
+
+        </section>
+        
+        <section style="text-align: center; margin-top: 40px;">
+             <h3>Vous ne savez pas quelle branche choisir ?</h3>
+             <p>Contactez notre service d'orientation pour un conseil personnalisé.</p>
+             <a href="contact.html" style="display: inline-block; background-color: #004a99; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Prendre Rendez-vous</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Institut Fichel. Tous droits réservés.</p>
+        <p><a href="politique.html" style="color: white;">Politique de Confidentialité</a> | <a href="mentions.html" style="color: white;">Mentions Légales</a></p>
+    </footer>
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            var header = content.previousElementSibling;
+            var arrow = header.querySelector('span:last-child');
+            
+            // Fermer tous les autres contenus ouverts
+            document.querySelectorAll('.branch-content').forEach(function(item) {
+                if (item.id !== id && item.style.display === 'block') {
+                    item.style.display = 'none';
+                    item.previousElementSibling.querySelector('span:last-child').textContent = '[+]';
+                }
+            });
+
+            // Basculer l'affichage du contenu actuel
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                arrow.textContent = '[+]';
+            } else {
+                content.style.display = 'block';
+                arrow.textContent = '[-]';
+            }
+        }
+    </script>
+
+</body>
+</html>

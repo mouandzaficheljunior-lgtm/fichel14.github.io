@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut Fichel - Admission et Inscription</title>
+    <style>
+        /* CSS simple pour la démo - Styles de base réutilisés */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004a99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        h2 {
+            color: #004a99;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        .step-card {
+            background: #ffffff;
+            padding: 20px;
+            border-left: 5px solid #ffcc00; /* Bande de couleur pour l'accent */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .step-card h3 {
+            color: #004a99;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+        .step-card h3 span {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-right: 10px;
+        }
+        .cta-box {
+            background-color: #004a99;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .cta-box p {
+            font-size: 1.1em;
+        }
+        .btn-portal {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #004a99;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        .btn-portal:hover {
+            background-color: #ffc233;
+        }
+        .documents-list {
+            background: #e9ecef;
+            padding: 25px;
+            border-radius: 8px;
+        }
+        .documents-list ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Institut Fichel</h1>
+        <p>L'excellence au service de l'avenir</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formation.html">Formations</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h2>Processus d'Admission à l'Institut Fichel</h2>
+        <p style="text-align: center; font-size: 1.1em; margin-bottom: 40px;">Les admissions pour l'année académique sont ouvertes. Suivez les étapes ci-dessous pour postuler à nos programmes de Licence et Master.</p>
+
+        <section class="steps-container">
+            
+            <div class="step-card">
+                <h3><span>1</span> Choisir son Programme</h3>
+                <p>Consultez la liste détaillée des formations pour choisir le programme qui correspond le mieux à vos objectifs de carrière et à votre niveau d'études.</p>
+                <a href="branches.html" style="color: #004a99;">Voir les Formations</a>
+            </div>
+
+            <div class="step-card">
+                <h3><span>2</span> Soumettre le Dossier</h3>
+                <p>Remplissez le formulaire en ligne sur notre portail dédié et téléchargez les documents justificatifs requis avant la date limite.</p>
+                <a href="#documents.html" style="color: #004a99;">Liste des Documents</a>
+            </div>
+
+            <div class="step-card">
+                <h3><span>3</span> Entretien et Tests</h3>
+                <p>Les candidats présélectionnés seront invités à un entretien individuel et, selon le programme, à des tests d'aptitude spécifiques.</p>
+            </div>
+
+            <div class="step-card">
+                <h3><span>4</span> Résultats et Inscription</h3>
+                <p>Les résultats sont communiqués par e-mail. Les candidats acceptés procèderont à l'inscription administrative finale en ligne.</p>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="documents-list" id="documents">
+            <h3>Documents Requis (à télécharger en ligne)</h3>
+            <ul>
+                <li>Copie du dernier diplôme obtenu (Baccalauréat pour Licence, Licence pour Master)</li>
+                <li>Relevés de notes des trois dernières années d'études</li>
+                <li>Lettre de motivation expliquant votre projet professionnel</li>
+                <li>Copie d'une pièce d'identité valide</li>
+                <li>Attestation de niveau de langue (selon le programme, ex. TOEFL, DELF)</li>
+            </ul>
+        </section>
+
+        <section class="cta-box">
+            <h3>Prêt à commencer votre avenir ?</h3>
+            <p>Accédez directement à notre plateforme sécurisée pour démarrer ou suivre votre candidature.</p>
+            <a href="formulaire-inscription.html" target="_blank" class="btn-portal">Accéder au Portail de Candidature</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Institut Fichel. Tous droits réservés.</p>
+        <p><a href="politique.html" style="color: white;">Politique de Confidentialité</a> | <a href="mentions.html" style="color: white;">Mentions Légales</a></p>
+    </footer>
+
+</body>
+</html>

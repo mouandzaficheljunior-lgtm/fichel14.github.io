@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut Fichel - Recherche & Innovation</title>
+    <style>
+        /* CSS simple pour la démo - Styles de base réutilisés et adaptés */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004a99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .main-title {
+            color: #004a99;
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .hero-recherche {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 5px solid #004a99;
+        }
+        .hero-recherche p {
+            font-size: 1.1em;
+        }
+        .lab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .lab-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .lab-card h4 {
+            color: #004a99;
+            border-bottom: 2px dotted #ffcc00;
+            padding-bottom: 5px;
+        }
+        .lab-card ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 0.95em;
+        }
+        .cta-research {
+            text-align: center;
+            padding: 30px;
+            background: #ffcc00;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+        .cta-research h3 {
+            color: #004a99;
+        }
+        .cta-research a {
+            display: inline-block;
+            background-color: #004a99;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cta-research a:hover {
+            background-color: #003366;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Institut Fichel</h1>
+        <p>L'excellence au service de l'avenir</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="main-title">Recherche, Développement et Innovation</h2>
+        
+        <section class="hero-recherche">
+            <p>À l'Institut Fichel, la recherche est le moteur de notre enseignement. Nos équipes travaillent sur des problématiques mondiales en **technologie avancée** et en **sciences de la société**, garantissant que nos étudiants bénéficient des connaissances les plus actuelles.</p>
+            <p><strong>Objectif</strong> : Produire des connaissances à fort impact, soutenir l'innovation industrielle et former la prochaine génération de chercheurs.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Nos Axes de Recherche Principaux</h3>
+            <div class="lab-grid">
+                
+                <div class="lab-card">
+                    <h4>Labo Fichel pour la Sécurité Numérique (LFSN)</h4>
+                    <p>Recherche appliquée sur les algorithmes d'IA pour la détection des menaces et la cryptographie post-quantique.</p>
+                    <ul>
+                        <li>Cryptographie Avancée</li>
+                        <li>Systèmes de Défense Autonomes</li>
+                        <li>Éthique et IA</li>
+                    </ul>
+                    <a href="#" style="color: #ffcc00; font-weight: bold;">Voir les publications récentes</a>
+                </div>
+
+                <div class="lab-card">
+                    <h4>Centre Fichel des Énergies Durables (CFED)</h4>
+                    <p>Développement de nouvelles sources d'énergie renouvelable et optimisation des réseaux intelligents (Smart Grids).</p>
+                    <ul>
+                        <li>Matériaux Photovoltaïques Nouveaux</li>
+                        <li>Stockage d'Énergie (Batteries et Hydrogène)</li>
+                        <li>Modélisation Climatique</li>
+                    </ul>
+                    <a href="#" style="color: #ffcc00; font-weight: bold;">Projets de partenariat industriel</a>
+                </div>
+
+                <div class="lab-card">
+                    <h4>Groupe d'Études sur le Futur du Travail (GEFT)</h4>
+                    <p>Analyse des impacts du numérique et de l'automatisation sur les organisations, l'économie et le management.</p>
+                    <ul>
+                        <li>Transformation Managériale</li>
+                        <li>Économie Comportementale</li>
+                        <li>Gestion de Crise et Résilience</li>
+                    </ul>
+                    <a href="#" style="color: #ffcc00; font-weight: bold;">Thèses en cours</a>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="cta-research">
+            <h3>Opportunités pour Doctorants et Partenaires</h3>
+            <p>L'Institut Fichel accueille des doctorants et propose des chaires de recherche en collaboration avec le secteur privé.</p>
+            <a href="contact.html">Postuler à une Thèse ou Proposer un Partenariat</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Institut Fichel. Tous droits réservés.</p>
+        <p><a href="politique.html" style="color: white;">Politique de Confidentialité</a> | <a href="mentions.html" style="color: white;">Mentions Légales</a></p>
+    </footer>
+
+</body>
+</html>

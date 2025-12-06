@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut Fichel - Contactez-nous</title>
+    <style>
+        /* CSS simple pour la démo - Réutilisez les styles des pages précédentes et ajoutez ceux-ci */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004a99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .contact-info, .contact-form-container {
+            flex-basis: 48%; /* Répartition du contenu */
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .contact-info h3, .contact-form-container h3 {
+            color: #004a99;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+        }
+        /* Style du formulaire */
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #004a99;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Assure que le padding n'augmente pas la largeur totale */
+        }
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .contact-form button {
+            background-color: #ffcc00;
+            color: #004a99;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #ffc233;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Institut Fichel</h1>
+        <p>L'excellence au service de l'avenir</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formation.html">Formations</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h2>Nous Contacter</h2>
+        <p>Que vous ayez des questions sur l'admission, les programmes ou la recherche, notre équipe est là pour vous aider.</p>
+
+        <section class="contact-content">
+            
+            <div class="contact-form-container">
+                <h3>Envoyez-nous un Message</h3>
+                <form action="submit_form.php" method="POST" class="contact-form">
+                    
+                    <label for="nom">Nom Complet *</label>
+                    <input type="text" id="nom" name="nom" required>
+                    
+                    <label for="email">Adresse E-mail *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="sujet">Sujet de la demande *</label>
+                    <select id="sujet" name="sujet" required>
+                        <option value="">-- Sélectionnez un sujet --</option>
+                        <option value="admission">Admission et Inscriptions</option>
+                        <option value="formations">Informations sur les Formations</option>
+                        <option value="partenariat">Partenariat et Coopération</option>
+                        <option value="autre">Autre Demande</option>
+                    </select>
+                    
+                    <label for="message">Votre Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Envoyer le Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Coordonnées de l'Institut</h3>
+                
+                <h4>Adresse Postale</h4>
+                <p>
+                    Institut Fichel<br>
+                    123 Rue de l'Innovation<br>
+                    75000 Ville Université
+                </p>
+
+                <h4>Téléphone</h4>
+                <p>Standard : +33 (0)1 23 45 67 89</p>
+                
+                <h4>E-mail Direct</h4>
+                <p>
+                    <a href="mailto:info@institut-fichel.edu" style="color: #004a99; font-weight: bold;">info@institut-fichel.edu</a>
+                </p>
+
+                <h4>Horaires d'Ouverture</h4>
+                <p>Du lundi au vendredi : 8h30 - 17h30</p>
+
+                <hr>
+
+                <h3>Accès et Carte</h3>
+                <p>Trouvez-nous facilement grâce à notre emplacement central.</p>
+                <div style="width: 100%; height: 200px; background-color: #ccc; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
+                    [Emplacement Google Maps Intégré ici]
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Institut Fichel. Tous droits réservés.</p>
+        <p><a href="politique.html" style="color: white;">Politique de Confidentialité</a> | <a href="mentions.html" style="color: white;">Mentions Légales</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut Fichel - Documents Utiles</title>
+    <style>
+        /* CSS simple pour la démo - Styles de base réutilisés et adaptés */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004a99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .main-title {
+            color: #004a99;
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .document-category {
+            margin-bottom: 40px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .document-category h3 {
+            color: #004a99;
+            border-left: 5px solid #ffcc00;
+            padding-left: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .doc-list {
+            list-style: none;
+            padding: 0;
+        }
+        .doc-list li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .doc-list li:last-child {
+            border-bottom: none;
+        }
+        .doc-title {
+            font-weight: bold;
+        }
+        .doc-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .doc-info span {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .doc-link {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #004a99;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .doc-link:hover {
+            background-color: #ffc233;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Institut Fichel</h1>
+        <p>L'excellence au service de l'avenir</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formation.html">Formations</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="main-title">Ressources et Documents à Télécharger</h2>
+        <p>Retrouvez ici tous les documents utiles concernant l'Institut Fichel, classés par thématique : guides d'études, règlements, formulaires administratifs et brochures.</p>
+
+        <section class="document-category">
+            <h3>Guides d'Admission et Brochures</h3>
+            <ul class="doc-list">
+                <li>
+                    <span class="doc-title">Brochure Générale de l'Institut Fichel (2025-2026)</span>
+                    <div class="doc-info">
+                        <span>PDF | 4.5 Mo</span>
+                        <a href="downloads/Brochure_IF_2025.pdf" target="_blank" class="doc-link">Télécharger</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="doc-title">Guide d'Admission aux Cycles Masters</span>
+                    <div class="doc-info">
+                        <span>PDF | 1.2 Mo</span>
+                        <a href="downloads/Guide_Admission_Master.pdf" target="_blank" class="doc-link">Télécharger</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="doc-title">Calendrier des Journées Portes Ouvertes 2026</span>
+                    <div class="doc-info">
+                        <span>PDF | 0.5 Mo</span>
+                        <a href="downloads/JPO_Calendrier.pdf" target="_blank" class="doc-link">Télécharger</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="document-category">
+            <h3>Règlements Intérieurs et Chartes</h3>
+            <ul class="doc-list">
+                <li>
+                    <span class="doc-title">Règlement Intérieur des Études (Version 2.1)</span>
+                    <div class="doc-info">
+                        <span>PDF | 2.1 Mo</span>
+                        <a href="downloads/Reglement_Etudes.pdf" target="_blank" class="doc-link">Télécharger</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="doc-title">Charte Informatique et des Usages Numériques</span>
+                    <div class="doc-info">
+                        <span>PDF | 0.8 Mo</span>
+                        <a href="downloads/Charte_Informatique.pdf" target="_blank" class="doc-link">Télécharger</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="document-category">
+            <h3>Formulaires Administratifs</h3>
+            <ul class="doc-list">
+                <li>
+                    <span class="doc-title">Formulaire de Demande de Bourse et Aide Sociale</span>
+                    <div class="doc-info">
+                        <span>DOCX | 0.3 Mo</span>
+                        <a href="downloads/Formulaire_Bourse.docx" target="_blank" class="doc-link">Télécharger</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="doc-title">Fiche de Réinscription (Étudiants actuels)</span>
+                    <div class="doc-info">
+                        <span>PDF | 0.2 Mo</span>
+                        <a href="downloads/Fiche_Reinscription.pdf" target="_blank" class="doc-link">Télécharger</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Institut Fichel. Tous droits réservés.</p>
+        <p><a href="politique.html" style="color: white;">Politique de Confidentialité</a> | <a href="mentions.html" style="color: white;">Mentions Légales</a></p>
+    </footer>
+
+</body>
+</html>

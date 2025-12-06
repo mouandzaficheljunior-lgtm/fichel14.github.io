@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut Fichel - Formations Exécutives</title>
+    <style>
+        /* CSS simple pour la démo - Styles de base réutilisés et adaptés */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004a99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .main-title {
+            color: #004a99;
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .intro-exec {
+            background: #e9ecef;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .intro-exec h3 {
+            color: #004a99;
+            margin-top: 0;
+        }
+        .program-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        .program-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #004a99;
+        }
+        .program-card h4 {
+            color: #ffcc00;
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+        .program-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted #ccc;
+        }
+        .program-card a.btn-details {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #004a99;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .cta-details {
+            text-align: center;
+            padding: 20px;
+            background: #ffcc00;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+        .cta-details a {
+            display: inline-block;
+            background-color: #004a99;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cta-details a:hover {
+            background-color: #003366;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Institut Fichel</h1>
+        <p>L'excellence au service de l'avenir</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formation.html">Formations</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="main-title">Formations Exécutives & Professionnelles</h2>
+        
+        <section class="intro-exec">
+            <h3>Accélérez Votre Carrière et Vos Compétences</h3>
+            <p>Conçus pour les professionnels en activité, nos programmes exécutifs offrent une expertise ciblée, des formats flexibles (soir, week-end, e-learning) et des certifications reconnues par l'industrie. Que ce soit pour une montée en compétences ou une reconversion, trouvez le programme qui répond à vos besoins.</p>
+        </section>
+
+        <section class="program-card-grid">
+            
+            <div class="program-card">
+                <h4>Certificat en Leadership et Innovation</h4>
+                <div class="program-info">
+                    <span>**Durée :** 3 mois (Temps partiel)</span>
+                    <span>**Format :** Hybride (Cours en ligne + Ateliers)</span>
+                </div>
+                <p>Développez votre potentiel de leadership, apprenez à gérer le changement et à stimuler l'innovation au sein de votre organisation.</p>
+                <ul>
+                    <li>Méthodes Agiles</li>
+                    <li>Négociation Stratégique</li>
+                    <li>Gestion des Équipes Distantes</li>
+                </ul>
+                <a href="#" class="btn-details">Voir le programme complet</a>
+            </div>
+
+            <div class="program-card">
+                <h4>Bootcamp Développement Web Full Stack</h4>
+                <div class="program-info">
+                    <span>**Durée :** 10 semaines (Intensif)</span>
+                    <span>**Format :** Présentiel (Labos)</span>
+                </div>
+                <p>Devenez développeur Full Stack en quelques mois. Maîtrisez les technologies front-end (React) et back-end (Node.js/Python).</p>
+                <ul>
+                    <li>JavaScript Moderne</li>
+                    <li>Bases de Données SQL/NoSQL</li>
+                    <li>Déploiement Cloud (AWS/Azure)</li>
+                </ul>
+                <a href="#" class="btn-details">Voir le programme complet</a>
+            </div>
+
+            <div class="program-card">
+                <h4>Programme de Management Éthique et RSE</h4>
+                <div class="program-info">
+                    <span>**Durée :** 60 heures</span>
+                    <span>**Format :** 100% E-learning</span>
+                </div>
+                <p>Intégrez la Responsabilité Sociale des Entreprises (RSE) et les pratiques éthiques dans votre stratégie de gestion quotidienne.</p>
+                <ul>
+                    <li>Audit Social et Environnemental</li>
+                    <li>Gouvernance d'Entreprise</li>
+                    <li>Finance Durable</li>
+                </ul>
+                <a href="#" class="btn-details">Voir le programme complet</a>
+            </div>
+            
+        </section>
+
+        <hr>
+
+        <section class="cta-details">
+            <h3 style="color: white;">Une Question sur nos Formations Professionnelles ?</h3>
+            <p style="color: white;">Notre équipe dédiée est à votre disposition pour vous conseiller sur le choix de programme et les possibilités de financement (CPF, employeur, OPCO).</p>
+            <a href="contact.html">Contacter le Service Exécutif</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Institut Fichel. Tous droits réservés.</p>
+        <p><a href="politique.html" style="color: white;">Politique de Confidentialité</a> | <a href="mentions.html" style="color: white;">Mentions Légales</a></p>
+    </footer>
+
+</body>
+</html>

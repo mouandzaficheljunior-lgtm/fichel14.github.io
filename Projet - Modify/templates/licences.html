@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut Fichel - Licences (BAC+3)</title>
+    <style>
+        /* CSS simple pour la démo - Styles de base réutilisés et adaptés */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004a99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .main-title {
+            color: #004a99;
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .content-flex {
+            display: flex;
+            gap: 30px;
+        }
+        .overview-box {
+            flex-basis: 30%;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+        .overview-box h3 {
+            color: #004a99;
+            margin-top: 0;
+        }
+        .main-description {
+            flex-basis: 70%;
+        }
+        .main-description h3 {
+            color: #004a99;
+        }
+        .curriculum-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .module-list {
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .module-list h4 {
+            color: #333;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+        }
+        .module-list ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .cta-details {
+            text-align: center;
+            padding: 20px;
+            background: #004a99;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        .cta-details a {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #004a99;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cta-details a:hover {
+            background-color: #ffc233;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Institut Fichel</h1>
+        <p>L'excellence au service de l'avenir</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formation.html">Formations</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="main-title">Les Cycles de Licence (BAC +3)</h2>
+
+        <div class="content-flex">
+            
+            <aside class="overview-box">
+                <h3>En Bref</h3>
+                <ul>
+                    <li>**Niveau d'entrée :** BAC ou équivalent</li>
+                    <li>**Durée :** 3 ans (6 semestres)</li>
+                    <li>**Crédits ECTS :** 180</li>
+                    <li>**Statut :** Initial ou Alternance (selon les programmes)</li>
+                    <li>**Langue :** Français et Anglais Technique</li>
+                </ul>
+                <hr>
+                <h3>Prochaines rentrées</h3>
+                <p>Automne 2025 : 1er Septembre</p>
+                <p>Printemps 2026 : (Sélection réduite) 15 Janvier</p>
+            </aside>
+
+            <section class="main-description">
+                <h3>Présentation du Cycle</h3>
+                <p>Le cycle de Licence de l'Institut Fichel vise à fournir aux étudiants les **compétences fondamentales** nécessaires pour exceller dans un domaine technique ou de gestion spécifique. Notre programme met l'accent sur l'acquisition rapide d'une expertise pratique tout en développant une solide base théorique.</p>
+                <p>À l'issue des trois ans, les diplômés sont immédiatement opérationnels pour intégrer le marché du travail ou poursuivre leurs études en Master, notamment au sein de l'Institut Fichel.</p>
+
+                <h3>Les Objectifs Pédagogiques</h3>
+                <ul>
+                    <li>Maîtriser les outils techniques et méthodologiques de la discipline choisie.</li>
+                    <li>Développer la capacité à travailler en équipe sur des projets complexes.</li>
+                    <li>Acquérir une forte autonomie et un sens critique.</li>
+                    <li>Préparer aux enjeux éthiques et responsables du monde professionnel.</li>
+                </ul>
+
+                <h3>Structure des Enseignements</h3>
+                
+                <div class="curriculum-grid">
+                    
+                    <div class="module-list">
+                        <h4>Modules Fondamentaux (Tronc Commun)</h4>
+                        <ul>
+                            <li>Mathématiques Appliquées</li>
+                            <li>Statistiques et Probabilités</li>
+                            <li>Fondamentaux de la Gestion</li>
+                            <li>Droit des Affaires et Éthique</li>
+                        </ul>
+                    </div>
+
+                    <div class="module-list">
+                        <h4>Modules Spécialisés (Exemples)</h4>
+                        <ul>
+                            <li>Programmation Orientée Objet (L3)</li>
+                            <li>Chaîne Logistique et Optimisation (L2)</li>
+                            <li>Systèmes d'Information Géographique (L3)</li>
+                            <li>Introduction au Big Data (L1)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Débouchés Professionnels</h3>
+                <p>Les diplômés peuvent exercer des fonctions de **Technicien Supérieur Spécialisé**, **Assistant Chef de Projet**, ou **Chargé d'Études** dans des secteurs variés : IT, Finance, Environnement, et Industrie.</p>
+            </section>
+        </div>
+
+        <section class="cta-details">
+            <h3>Intéressé(e) par la Licence ?</h3>
+            <p style="color: white;">N'attendez plus pour démarrer votre candidature en ligne et consulter les critères d'admissibilité.</p>
+            <a href="admission.html">Commencer la Candidature</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Institut Fichel. Tous droits réservés.</p>
+        <p><a href="politique.html" style="color: white;">Politique de Confidentialité</a> | <a href="mentions.html" style="color: white;">Mentions Légales</a></p>
+    </footer>
+
+</body>
+</html>

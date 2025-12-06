@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut Fichel - Tendances Mondiales & Compétences Clés</title>
+    <style>
+        /* Styles de base réutilisés */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
+        header { background-color: #004a99; color: white; padding: 20px 0; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        nav ul { list-style: none; padding: 0; margin: 10px 0 0 0; display: flex; justify-content: center; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        nav ul li a:hover { color: #ffcc00; }
+        .container { width: 80%; margin: auto; overflow: hidden; padding: 20px 0; }
+        .main-title { color: #004a99; border-bottom: 3px solid #ffcc00; padding-bottom: 10px; margin-bottom: 30px; text-align: center; }
+        
+        /* Styles spécifiques à cette page */
+        .sector-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .sector-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-top: 8px solid #004a99;
+        }
+        .sector-card h3 {
+            color: #004a99;
+            font-size: 1.5em;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .competence-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 15px;
+        }
+        .competence-list li {
+            background: #e9ecef;
+            padding: 8px 12px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            font-size: 0.95em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .competence-list strong {
+            color: #333;
+        }
+        .link-program {
+            display: inline-block;
+            margin-top: 15px;
+            color: #ffcc00;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .link-program:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Institut Fichel</h1>
+        <p>L'excellence au service de l'avenir</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="documents.html">Documents</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="main-title">Tendances Mondiales : Les Formations Clés de l'Avenir</h2>
+        <p style="text-align: center; margin-bottom: 40px;">Les programmes de l'Institut Fichel sont alignés sur les besoins des secteurs les plus dynamiques du marché international. Découvrez les compétences qui feront la différence.</p>
+
+        <section class="sector-grid">
+            
+            <div class="sector-card">
+                <h3>🔒 Sécurité Numérique & Big Data</h3>
+                <p>Le besoin de protéger les infrastructures critiques et d'analyser d'énormes volumes de données est constant et croissant dans tous les secteurs.</p>
+                
+                <ul class="competence-list">
+                    <li>**Cybersécurité Offensive/Défensive**</li>
+                    <li>**Analyse de données (Data Science)**</li>
+                    <li>**Cloud Computing & Architecture**</li>
+                    <li>**Cryptographie Avancée**</li>
+                </ul>
+                <a href="masters.html" class="link-program">→ Explorer le Master Cybersécurité Avancée</a>
+            </div>
+
+            <div class="sector-card">
+                <h3>♻️ Énergies Vertes et Climat</h3>
+                <p>La transition vers une économie neutre en carbone crée une demande massive d'experts en systèmes énergétiques durables, RSE et économie circulaire.</p>
+                
+                <ul class="competence-list">
+                    <li>**Énergies Renouvelables (Solaire, Éolien)**</li>
+                    <li>**Gestion des Projets RSE**</li>
+                    <li>**Modélisation Environnementale**</li>
+                    <li>**Financement Vert (Green Finance)**</li>
+                </ul>
+                <a href="executif.html" class="link-program">→ Voir les Formations Exécutives RSE</a>
+            </div>
+
+            <div class="sector-card">
+                <h3>📦 Supply Chain et Logistique 4.0</h3>
+                <p>L'optimisation des chaînes d'approvisionnement mondiales et l'automatisation nécessitent des compétences en gestion, en IA et en systèmes de production intelligents.</p>
+                
+                <ul class="competence-list">
+                    <li>**Optimisation des Processus**</li>
+                    <li>**Management de la Chaîne Logistique**</li>
+                    <li>**Analyse Prédictive des Stocks**</li>
+                    <li>**Automatisation (IoT Industriel)**</li>
+                </ul>
+                <a href="licences.html" class="link-program">→ Découvrir la Licence Gestion</a>
+            </div>
+
+            <div class="sector-card">
+                <h3>💰 Finance et Technologies (FinTech)</h3>
+                <p>L'innovation bouleverse la finance. Les experts qui maîtrisent à la fois les mathématiques, la programmation et les marchés financiers sont très recherchés.</p>
+                
+                <ul class="competence-list">
+                    <li>**Algorithmes de Trading**</li>
+                    <li>**Blockchain et Cryptomonnaies**</li>
+                    <li>**Gestion des Risques Quantitatifs**</li>
+                    <li>**Réglementation (RegTech)**</li>
+                </ul>
+                <a href="masters.html" class="link-program">→ Explorer le Master Finance Quantitative</a>
+            </div>
+
+        </section>
+        
+        <hr>
+
+        <section style="text-align: center; margin-top: 40px;">
+             <h3>Alignez votre parcours sur l'avenir du marché</h3>
+             <p>Chacun de nos programmes est conçu pour vous offrir une longueur d'avance dans ces secteurs en pleine expansion.</p>
+             <a href="admission.html" style="display: inline-block; background-color: #ffcc00; color: #004a99; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;">Je postule pour un métier d'avenir</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Institut Fichel. Tous droits réservés.</p>
+        <p><a href="politique.html" style="color: white;">Politique de Confidentialité</a> | <a href="mentions.html" style="color: white;">Mentions Légales</a></p>
+    </footer>
+
+</body>
+</html>

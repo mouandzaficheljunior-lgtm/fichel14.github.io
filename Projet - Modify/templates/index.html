@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut Fichel - Accueil</title>
+    <style>
+        /* CSS simple pour la démo - vous pouvez le déplacer dans un fichier 'style.css' */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004a99; /* Bleu institutionnel */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .img {
+            text-align: left;
+            margin-bottom: 10px;
+            margin-left: 35px;
+        }
+        .nav-var {
+            text-align: right;
+            margin-right: 35px;
+            margin-top: 20px;
+            margin-left: 1390px;
+            transition: color 0.3s;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: #ffcc00;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00; /* Jaune/Or pour l'effet de survol */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .hero {
+            background: #ffffff;
+            padding: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .hero h2 {
+            color: #004a99;
+        }
+        .sections {
+            display: flex;
+            justify-content: space-between;
+        }
+        .section-box {
+            background: #e9ecef;
+            padding: 20px;
+            flex-basis: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        .section-box h3 {
+            color: #004a99;
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="img">
+            <img src="images/logo-fichel.png" alt="Logo Institut Fichel" style="height: 60px; margin-bottom: 10px;">
+        </div>
+        <Div class="nav-var">
+            <nav>
+                <a href="connexion.html" class="btn btn-sm btn-outline-secondary">
+                         Connexion
+                </a>
+            </nav>
+        </Div>
+        
+        <h1>Institut Fichel</h1>
+        <p>L'excellence au service de l'avenir</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formation.html">Formations</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <section class="hero">
+            <h2>Bienvenue à l'Institut Fichel</h2>
+            <p>Depuis plus de 20 ans, l'Institut Fichel forme les leaders de demain dans les domaines de la **technologie**, de **commerce**, **juridique** et des **sciences humaines**. Notre approche pédagogique unique combine théorie de pointe et projets pratiques en collaboration avec l'industrie.</p>
+            <p><a href="admission.html" style="display: inline-block; background-color: #ffcc00; color: #004a99; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px;">Postulez Maintenant</a></p>
+        </section>
+        
+        <hr>
+
+        <section class="sections">
+            
+            <div class="section-box">
+                <h3>📢 Actualités Récentes</h3>
+                <p>Découvrez notre nouveau programme de **Master en Intelligence Artificielle** en partenariat avec IA-Tech. Début des inscriptions : 1er décembre.</p>
+                <p><a href="#">Lire la suite...</a></p>
+            </div>
+
+            <div class="section-box">
+                <h3>🎓 Nos Programmes</h3>
+                <p>Licences, Masters, et formations professionnelles continues. Trouvez le parcours qui propulsera votre carrière.</p>
+                <p><a href="formation.html">Explorer les formations</a></p>
+            </div>
+            
+            <div class="section-box">
+                <h3>💡 Recherche & Innovation</h3>
+                <p>L'Institut Fichel est à la pointe de la recherche mondiale avec des laboratoires primés en **énergies renouvelables**, **cybersécurité**, ...</p>
+                <p><a href="recherche.html">Voir nos publications</a></p>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Institut Fichel. Tous droits réservés.</p>
+        <p><a href="politique.html" style="color: white;">Politique de Confidentialité</a> | <a href="mentions.html" style="color: white;">Mentions Légales</a></p>
+    </footer>
+
+</body>
+</html>

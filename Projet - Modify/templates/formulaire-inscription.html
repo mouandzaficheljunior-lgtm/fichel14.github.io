@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institut Fichel - Formulaire d'Inscription</title>
+    <style>
+        /* CSS simple pour la démo - Styles de base réutilisés et adaptés */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004a99;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        /* Style du formulaire */
+        .registration-form {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .form-section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+        }
+        .form-section h3 {
+            color: #004a99;
+            margin-top: 0;
+            border-bottom: 2px solid #f4f4f9;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin: 5px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="date"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group label {
+            font-weight: normal;
+            margin-right: 20px;
+            display: inline-block;
+        }
+        .btn-submit {
+            display: block;
+            width: 100%;
+            background-color: #ffcc00;
+            color: #004a99;
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 30px;
+            transition: background-color 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #ffc233;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Institut Fichel</h1>
+        <p>Portail de Candidature en Ligne</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formation.html">Formations</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h2>Formulaire d'Inscription - Année Académique 2025/2026</h2>
+        
+        <form action="process_registration.php" method="POST" class="registration-form">
+            
+            <div class="form-section">
+                <h3>1. Identité du Candidat</h3>
+                
+                <div class="form-group">
+                    <label for="nom">Nom de Famille *</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="prenom">Prénom(s) *</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="naissance">Date de Naissance *</label>
+                    <input type="date" id="naissance" name="naissance" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Sexe</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="sexe" value="F" required> Féminin</label>
+                        <label><input type="radio" name="sexe" value="M"> Masculin</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nationalite">Nationalité *</label>
+                    <input type="text" id="nationalite" name="nationalite" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>2. Coordonnées</h3>
+
+                <div class="form-group">
+                    <label for="email">Adresse E-mail *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telephone">Numéro de Téléphone *</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Ex: +242 06 634 30 02" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="adresse">Adresse Postale Complète *</label>
+                    <textarea id="adresse" name="adresse" rows="3" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>3. Choix du Programme</h3>
+
+                <div class="form-group">
+                    <label for="niveau">Niveau d'Études Visé *</label>
+                    <select id="niveau" name="niveau" required>
+                        <option value="">-- Sélectionner --</option>
+                        <option value="licence">Licence (BAC +3)</option>
+                        <option value="master">Master (BAC +5)</option>
+                        <option value="executif">Formation Exécutive</option>
+                        <option value="doctorat">Doctorat</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="programme">Programme Spécifique *</label>
+                    <input type="text" id="programme" name="programme" placeholder="Ex: Master Cybersécurité Avancée" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rentree">Rentrée Souhaitée</label>
+                    <select id="rentree" name="rentree">
+                        <option value="automne">Automne 2025 (Septembre)</option>
+                        <option value="printemps">Printemps 2026 (Janvier)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <h3>4. Motivation et Validation</h3>
+                
+                <div class="form-group">
+                    <label for="motivation">Pourquoi postuler à l'Institut Fichel ? (Max. 500 caractères)</label>
+                    <textarea id="motivation" name="motivation" rows="4" maxlength="500"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="declaration_honneur" required> Je certifie sur l'honneur l'exactitude des informations fournies. *
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="accepte_rgpd" required> J'accepte les conditions générales et la politique de confidentialité. *
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Soumettre ma Candidature</button>
+            <p style="text-align: center; margin-top: 20px; font-size: 0.9em;">* Champs obligatoires. Après soumission, vous recevrez un lien pour télécharger vos documents (diplômes, CV, etc.).</p>
+
+        </form>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Institut Fichel. Tous droits réservés.</p>
+        <p><a href="politique.html" style="color: white;">Politique de Confidentialité</a> | <a href="mentions.html" style="color: white;">Mentions Légales</a></p>
+    </footer>
+
+</body>
+</html>
